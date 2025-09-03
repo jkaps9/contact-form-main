@@ -150,7 +150,7 @@ input[type="radio"] {
 
 /* Checkbox */
 
-.consent-label {
+/* .consent-label {
   display: block;
   position: relative;
   padding-left: 2rem;
@@ -161,12 +161,26 @@ input[type="radio"] {
 }
 
 .consent-label input {
-  /* Hide the browser's default checkbox */
+  Hide the browser's default checkbox
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
+} */
+
+.consent-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+.consent-label {
+  display: inline;
 }
 
 .checkmark {
