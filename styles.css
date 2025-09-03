@@ -262,14 +262,16 @@ textarea:required:invalid {
 @media only screen and (min-width: 48rem) {
   form {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .span-all {
-    grid-column: span 2;
+    grid-column: 1 / -1;
   }
 
   .radio-set {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
