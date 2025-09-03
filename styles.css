@@ -210,7 +210,7 @@ textarea {
 }
 
 /* Submit button */
-input[type="submit"] {
+button {
   appearance: none;
   background: var(--green-600-medium);
   color: var(--white);
@@ -223,7 +223,7 @@ input[type="submit"] {
   margin-top: 2rem;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }
 
