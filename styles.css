@@ -181,6 +181,8 @@ input[type="checkbox"] {
 
 .consent-label {
   display: inline;
+  margin: 1em 0;
+  cursor: pointer;
 }
 
 .checkmark {
