@@ -219,8 +219,12 @@ button {
   padding: 1rem 0;
   width: 100%;
   cursor: pointer;
-  font-weight: 700;
   margin-top: 2rem;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 150%;
 }
 
 button:hover {
