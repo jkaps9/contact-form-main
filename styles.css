@@ -202,6 +202,12 @@ button:hover {
   background-color: hsl(169, 82%, 22%);
 }
 
+/* ERROR MESSAGE */
+.error-message {
+  padding-top: 0.5em;
+  color: var(--red);
+}
+
 @media (min-width: 48rem) {
   form {
     grid-template-columns: repeat(2, 1fr);
