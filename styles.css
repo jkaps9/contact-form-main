@@ -39,13 +39,13 @@ main {
 }
 
 .container {
+  position: relative;
   max-width: 736px;
   width: 90%;
   margin: 2rem auto;
   background: var(--white);
   border-radius: var(--border-radius);
   padding: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
-  position: relative;
 }
 
 h1 {
@@ -54,7 +54,6 @@ h1 {
 
 /* General Form Styles */
 form {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -234,7 +233,7 @@ button:hover {
 /* Success Message */
 .success-message {
   position: absolute;
-  top: 0;
+  top: -1rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -243,7 +242,6 @@ button:hover {
   border-radius: 0.75rem;
   color: var(--white);
   padding: 1.5rem;
-
   z-index: 2;
 
   .title {
