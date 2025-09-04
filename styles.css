@@ -107,8 +107,8 @@ legend {
   margin-bottom: 1.5rem;
 }
 
-fieldset:has([required]) legend,
-.form-group:has(:not([type="radio"])[required]) label {
+fieldset[required] legend,
+.form-group:has(:not(fieldset)[required]) label {
   display: flex;
   gap: 1ch;
 
