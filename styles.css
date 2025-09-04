@@ -101,7 +101,7 @@ legend {
 }
 
 fieldset:has([required]) legend,
-.form-group:has([required]) label {
+.form-group:has(:not([type="radio"])[required]) label {
   display: flex;
   gap: 1ch;
 
