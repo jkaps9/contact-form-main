@@ -23,6 +23,7 @@ body {
 }
 
 body {
+  accent-color: var(--green-600);
   font-family: "Karla", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -80,10 +81,10 @@ textarea {
   height: 3rem;
 }
 
-input:focus,
-textarea:focus {
+input:focus-visible,
+textarea:focus-visible {
   background: rgba(0, 0, 0, 0.1);
-  outline: none;
+  outline-color: var(--green-600);
 }
 
 .required::after {
@@ -109,19 +110,11 @@ legend {
 }
 
 input[type="radio"] {
-  appearance: none;
-  position: relative;
   width: 1.1em;
   height: 1.1em;
-  border: 1px solid var(--grey-500);
   border-radius: 50%;
   vertical-align: -4px;
-  padding: 0;
   margin: 0 1rem 0 0;
-}
-
-input[type="radio"] {
-  border-radius: 100%;
 }
 
 .radio-item {
@@ -133,12 +126,13 @@ input[type="radio"] {
   align-items: center;
 }
 
-.radio-item:hover {
+.radio-item:has(input[type="radio"]:checked) {
   background: var(--green-200);
 }
 
 .radio-item label {
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 /* Checkbox */
