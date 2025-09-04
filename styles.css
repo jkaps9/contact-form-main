@@ -182,12 +182,6 @@ button:hover {
   background-color: hsl(169, 82%, 22%);
 }
 
-/* Form States */
-input:required:invalid,
-textarea:required:invalid {
-  border-color: var(--red);
-}
-
 @media (min-width: 48rem) {
   form {
     grid-template-columns: repeat(2, 1fr);
