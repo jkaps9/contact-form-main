@@ -142,6 +142,18 @@ input[type="radio"] {
   padding: 0 2rem;
   display: flex;
   align-items: center;
+
+  position: relative;
+
+  label::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.radio-item:hover {
+  border-color: var(--green-600);
 }
 
 .radio-item:has(input[type="radio"]:checked) {
