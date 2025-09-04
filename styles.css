@@ -100,6 +100,17 @@ legend {
   margin-bottom: 1.5rem;
 }
 
+fieldset:has([required]) legend,
+.form-group:has([required]) label {
+  display: flex;
+  gap: 1ch;
+
+  &::after {
+    content: "*";
+    color: var(--green-600);
+  }
+}
+
 /* Radio */
 .radio-set {
   position: relative;
