@@ -207,10 +207,23 @@ button:hover {
   background-color: hsl(169, 82%, 22%);
 }
 
-/* ERROR MESSAGE */
+/* Error state */
 .error-message {
   padding-top: 0.25rem;
   color: var(--red);
+  display: none;
+}
+
+.form-group:has(input:user-invalid),
+.form-group:has(textarea:user-invalid) {
+  input,
+  textarea {
+    border-color: var(--red);
+  }
+
+  .error-message {
+    display: block;
+  }
 }
 
 .span-all {
