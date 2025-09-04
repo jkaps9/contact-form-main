@@ -45,6 +45,7 @@ main {
   background: var(--white);
   border-radius: var(--border-radius);
   padding: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
+  position: relative;
 }
 
 h1 {
@@ -228,6 +229,32 @@ button:hover {
 
 .span-all {
   grid-column: 1 / -1;
+}
+
+/* Success Message */
+.success-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: var(--grey-900);
+  border-radius: 0.75rem;
+  color: var(--white);
+  padding: 1.5rem;
+
+  z-index: 2;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
 }
 
 @media (min-width: 48rem) {
