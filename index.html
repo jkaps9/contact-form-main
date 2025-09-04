@@ -1,83 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Contact form</title>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              oninvalid="this.setCustomValidity('This field is required')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
 
-</head>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              oninvalid="this.setCustomValidity('This field is required')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
 
-<body>
+          <div class="form-group span-all">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              oninvalid="this.setCustomValidity('Please enter a valid email address')"
+              oninput="this.setCustomValidity('')"
+            />
+            <!-- Please enter a valid email address -->
+            <!-- This field is required -->
+          </div>
 
-  <main>
-    <div class="container">
-      <h1>Contact Us</h1>
-      <form id="contact-form">
+          <div class="form-group span-all">
+            <fieldset class="radio-set">
+              <legend>Query Type</legend>
+              <div class="radio-item">
+                <label for="general-enquiry"
+                  ><input
+                    type="radio"
+                    id="general-enquiry"
+                    name="query-type"
+                  />General Enquiry</label
+                >
+              </div>
+              <div class="radio-item">
+                <label for="support-request" class=""
+                  ><input
+                    type="radio"
+                    id="support-request"
+                    name="query-type"
+                  />Support Request</label
+                >
+              </div>
+            </fieldset>
+          </div>
+          <!-- Please select a query type -->
 
-        <div class="form-group">
-          <label for="first-name" class="required">First Name</label>
-          <input type="text" id="first-name" name="first-name"
-            oninvalid="this.setCustomValidity('This field is required')" oninput="this.setCustomValidity('')">
-        </div>
+          <div class="form-group span-all">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              oninvalid="this.setCustomValidity('This field is required')"
+              oninput="this.setCustomValidity('')"
+            ></textarea>
+          </div>
 
-        <div class="form-group">
-          <label for="last-name" class="required">Last Name</label>
-          <input type="text" id="last-name" name="last-name" 
-            oninvalid="this.setCustomValidity('This field is required')" oninput="this.setCustomValidity('')">
-        </div>
-
-        <div class="form-group span-all">
-          <label for="email" class="required">Email Address</label>
-          <input type="email" id="email" name="email"
-            oninvalid="this.setCustomValidity('Please enter a valid email address')"
-            oninput="this.setCustomValidity('')">
-          <!-- Please enter a valid email address -->
-          <!-- This field is required -->
-        </div>
-
-        <div class="form-group span-all">
-          <fieldset class="radio-set">
-            <legend class="required">Query Type</legend>
-            <div class="radio-item">
-              <label for="general-enquiry"><input type="radio" id="general-enquiry" name="query-type"></input>General
-                Enquiry</label>
-            </div>
-            <div class="radio-item">
-              <label for="support-request" class=""><input type="radio" id="support-request"
-                  name="query-type"></input>Support Request</label>
-            </div>
-          </fieldset>
-        </div>
-        <!-- Please select a query type -->
-
-        <div class="form-group span-all">
-          <label for="message" class="required">Message</label>
-          <textarea name="message" id="message" oninvalid="this.setCustomValidity('This field is required')"
-            oninput="this.setCustomValidity('')"></textarea>
-        </div>
-
-        <div class="form-group span-all consent-row">
-          <input type="checkbox" id="consent" name="consent">
-          <label for="consent" class="consent-label required">I consent to being contacted by the team
+          <div class="form-group span-all consent-row">
+            <input type="checkbox" id="consent" name="consent" />
+            <label for="consent" class="consent-label"
+              >I consent to being contacted by the team
             </label>
-          <!-- oninvalid="this.setCustomValidity('To submit this form, please consent to being contacted')"
+            <!-- oninvalid="this.setCustomValidity('To submit this form, please consent to being contacted')"
             oninput="this.setCustomValidity('')" -->
-          
-        </div>
+          </div>
 
-        <button class="span-all">Submit</button>
-        <!-- Message Sent!
+          <button class="span-all">Submit</button>
+          <!-- Message Sent!
     Thanks for completing the form. We'll be in touch soon! -->
-      </form>
-    </div>
-  </main>
-<script src="script.js"></script>
-</body>
-
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
