@@ -85,7 +85,7 @@ textarea:focus {
   border: 1px solid var(--grey-500);
 }
 
-.required:after {
+.required::after {
   content: " *";
   color: var(--green-600);
 }
@@ -195,19 +195,19 @@ input[type="checkbox"] {
   background-color: #ccc;
 }
 
-.checkmark:after {
+.checkmark::after {
   /* Create the checkmark/indicator (hidden when not checked) */
   content: "";
   position: absolute;
   display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark::after {
   /* Show the checkmark when checked */
   display: block;
 }
 
-.container .checkmark:after {
+.container .checkmark::after {
   /* Style the checkmark/indicator */
   background: url("assets/images/icon-checkbox-check.svg");
   left: -1px;
