@@ -79,12 +79,14 @@ textarea {
   font-size: 1.125rem;
   padding: 0.66667em 1.33334em;
   height: 3rem;
-}
 
-input:focus-visible,
-textarea:focus-visible {
-  background: rgba(0, 0, 0, 0.1);
-  outline-color: var(--green-600);
+  &:focus-visible {
+    outline-color: var(--green-600);
+  }
+
+  &:hover {
+    border-color: var(--green-600);
+  }
 }
 
 .required::after {
