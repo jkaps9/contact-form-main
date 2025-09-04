@@ -243,6 +243,11 @@ button:hover {
   color: var(--white);
   padding: 1.5rem;
   z-index: 2;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
 
   .title {
     display: flex;
