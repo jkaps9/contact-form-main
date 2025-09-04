@@ -91,10 +91,6 @@ textarea:focus {
   color: var(--green-600);
 }
 
-label {
-  margin-bottom: 0.5rem;
-}
-
 legend {
   margin-bottom: 1rem;
 }
