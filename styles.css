@@ -233,7 +233,15 @@ button:hover {
 @media (min-width: 48rem) {
   form {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .consent-row {
+    margin: 1rem 0;
   }
 
   .radio-set {
