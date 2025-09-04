@@ -31,6 +31,7 @@
               name="first-name"
               oninvalid="this.setCustomValidity('This field is required')"
               oninput="this.setCustomValidity('')"
+              required
             />
           </div>
 
@@ -42,6 +43,7 @@
               name="last-name"
               oninvalid="this.setCustomValidity('This field is required')"
               oninput="this.setCustomValidity('')"
+              required
             />
           </div>
 
@@ -53,6 +55,7 @@
               name="email"
               oninvalid="this.setCustomValidity('Please enter a valid email address')"
               oninput="this.setCustomValidity('')"
+              required
             />
             <!-- Please enter a valid email address -->
             <!-- This field is required -->
@@ -67,6 +70,7 @@
                     type="radio"
                     id="general-enquiry"
                     name="query-type"
+                    required
                   />General Enquiry</label
                 >
               </div>
@@ -76,6 +80,7 @@
                     type="radio"
                     id="support-request"
                     name="query-type"
+                    required
                   />Support Request</label
                 >
               </div>
@@ -90,11 +95,12 @@
               id="message"
               oninvalid="this.setCustomValidity('This field is required')"
               oninput="this.setCustomValidity('')"
+              required
             ></textarea>
           </div>
 
           <div class="form-group span-all consent-row">
-            <input type="checkbox" id="consent" name="consent" />
+            <input type="checkbox" id="consent" name="consent" required />
             <label for="consent" class="consent-label"
               >I consent to being contacted by the team
             </label>
